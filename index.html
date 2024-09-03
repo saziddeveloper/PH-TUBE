@@ -25,14 +25,14 @@
     </style>
 </head>
 <body class="px-2 md:px-12 lg:px-12 py-6 pb-8">
-    <header class="flex justify-between">
-        <div class="flex items-center">
+    <header class="grid grid-cols-2 md:flex  lg:flex md:justify-between lg:justify-between">
+        <div class="flex items-center col-span-2 justify-center mb-5 lg:mb-0">
             <img src="img/Logo.png" alt="">
         </div>
         <div class="w-64">
             <button class="btn px-5 bg-[#25252536] font-medium text-[#252525] text-lg rounded-lg hover:bg-[#25252538] active:opacity-20">Sort by view</button>
         </div>
-        <div>
+        <div class="ml-auto md:ml-0 lg:ml-0">
             <button class="btn px-5 bg-[#FF1F3D] font-medium text-white text-lg rounded-lg hover:bg-[#ec112f] active:opacity-20">Blog</button>
         </div>
     </header>
@@ -44,7 +44,7 @@
             <button class="px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Comedy</button>
             <button class="px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Drawing</button>
         </section>
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <section class="flex flex-col justify-center items-center md:grid lg:grid md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-5 md:gap-x-[72px]">
             <div class="flex flex-col gap-5 w-[299px] h-[324px]">
                 <div class="w-[299px] h-[200px]">
                     <img src="img/Rectangle1.png" alt="">
