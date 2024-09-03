@@ -39,131 +39,18 @@
     <div class="h-[2px] bg-[#1717171f] my-7 rounded-lg"></div>
     <main>
         <section class="flex justify-center gap-2 md:gap-5 lg:gap-5 mb-8">
-            <button class="px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">All</button>
-            <button class="px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Music</button>
-            <button class="px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Comedy</button>
-            <button class="px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Drawing</button>
-        </section>
-        <section class="flex flex-col justify-center items-center md:grid lg:grid md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-5 md:gap-x-[72px]">
-            <div class="flex flex-col gap-5 w-[299px] h-[324px]">
-                <div class="w-[299px] h-[200px]">
-                    <img src="img/Rectangle1.png" alt="">
+            <button data-category="all" class="category-btn px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white active">All</button>
+            <button data-category="music" class="category-btn px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Music</button>
+            <button data-category="comedy" class="category-btn px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Comedy</button>
+            <button data-category="drawing" class="category-btn px-4 md:px-5 lg:px-5 py-2 bg-[#2525251f] font-medium text-[#252525d2] rounded-md hover:bg-[#25252538] focus:bg-[#FF1F3D] focus:text-white">Drawing</button>
+        </section>        
+        <section id="videos-container" class="flex flex-col justify-center items-center md:grid lg:grid md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-5 md:gap-x-[72px]">
+            <!-- This container isn't empty. Element Input throw API with DOM manipulation -->
+            <div id="not-found-video" class="w-[400px] col-span-4 mx-auto mt-8 hidden">
+                <div class="flex justify-center">
+                    <img src="img/Icon.png" alt="">
                 </div>
-                <div class="flex gap-3">
-                    <aside>
-                        <div class="w-[40px] h-[40px]">
-                            <img src="img/dp.png" alt="">
-                        </div>
-                    </aside>
-                    <aside>
-                        <h2 class="font-bold text-[#171717]">Building a Winning UX Strategy Using the Kano Model</h2>
-                        <div class="flex gap-3 my-1">
-                            <p class="text-[#252525d2] text-base">Awlad Hossain</p>
-                            <i class="bi bi-patch-check-fill text-[#2568EF]"></i>
-                        </div>
-                        <p class="text-[#252525d2] text-base">91K views</p>
-                    </aside>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 w-[299px] h-[324px]">
-                <div class="w-[299px] h-[200px]">
-                    <img src="img/Rectangle1.png" alt="">
-                </div>
-                <div class="flex gap-3">
-                    <aside>
-                        <div class="w-[40px] h-[40px]">
-                            <img src="img/dp.png" alt="">
-                        </div>
-                    </aside>
-                    <aside>
-                        <h2 class="font-bold text-[#171717]">Building a Winning UX Strategy Using the Kano Model</h2>
-                        <div class="flex gap-3 my-1">
-                            <p class="text-[#252525d2] text-base">Awlad Hossain</p>
-                            <i class="bi bi-patch-check-fill text-[#2568EF]"></i>
-                        </div>
-                        <p class="text-[#252525d2] text-base">91K views</p>
-                    </aside>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 w-[299px] h-[324px]">
-                <div class="w-[299px] h-[200px]">
-                    <img src="img/Rectangle1.png" alt="">
-                </div>
-                <div class="flex gap-3">
-                    <aside>
-                        <div class="w-[40px] h-[40px]">
-                            <img src="img/dp.png" alt="">
-                        </div>
-                    </aside>
-                    <aside>
-                        <h2 class="font-bold text-[#171717]">Building a Winning UX Strategy Using the Kano Model</h2>
-                        <div class="flex gap-3 my-1">
-                            <p class="text-[#252525d2] text-base">Awlad Hossain</p>
-                            <i class="bi bi-patch-check-fill text-[#2568EF]"></i>
-                        </div>
-                        <p class="text-[#252525d2] text-base">91K views</p>
-                    </aside>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 w-[299px] h-[324px]">
-                <div class="w-[299px] h-[200px]">
-                    <img src="img/Rectangle1.png" alt="">
-                </div>
-                <div class="flex gap-3">
-                    <aside>
-                        <div class="w-[40px] h-[40px]">
-                            <img src="img/dp.png" alt="">
-                        </div>
-                    </aside>
-                    <aside>
-                        <h2 class="font-bold text-[#171717]">Building a Winning UX Strategy Using the Kano Model</h2>
-                        <div class="flex gap-3 my-1">
-                            <p class="text-[#252525d2] text-base">Awlad Hossain</p>
-                            <i class="bi bi-patch-check-fill text-[#2568EF]"></i>
-                        </div>
-                        <p class="text-[#252525d2] text-base">91K views</p>
-                    </aside>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 w-[299px] h-[324px]">
-                <div class="w-[299px] h-[200px]">
-                    <img src="img/Rectangle1.png" alt="">
-                </div>
-                <div class="flex gap-3">
-                    <aside>
-                        <div class="w-[40px] h-[40px]">
-                            <img src="img/dp.png" alt="">
-                        </div>
-                    </aside>
-                    <aside>
-                        <h2 class="font-bold text-[#171717]">Building a Winning UX Strategy Using the Kano Model</h2>
-                        <div class="flex gap-3 my-1">
-                            <p class="text-[#252525d2] text-base">Awlad Hossain</p>
-                            <i class="bi bi-patch-check-fill text-[#2568EF]"></i>
-                        </div>
-                        <p class="text-[#252525d2] text-base">91K views</p>
-                    </aside>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 w-[299px] h-[324px]">
-                <div class="w-[299px] h-[200px]">
-                    <img src="img/Rectangle1.png" alt="">
-                </div>
-                <div class="flex gap-3">
-                    <aside>
-                        <div class="w-[40px] h-[40px]">
-                            <img src="img/dp.png" alt="">
-                        </div>
-                    </aside>
-                    <aside>
-                        <h2 class="font-bold text-[#171717]">Building a Winning UX Strategy Using the Kano Model</h2>
-                        <div class="flex gap-3 my-1">
-                            <p class="text-[#252525d2] text-base">Awlad Hossain</p>
-                            <i class="bi bi-patch-check-fill text-[#2568EF]"></i>
-                        </div>
-                        <p class="text-[#252525d2] text-base">91K views</p>
-                    </aside>
-                </div>
+                <h1 class="mt-6 text-center font-bold text-[32px] text-[#171717]">Oops!! Sorry, There is no content here</h1>
             </div>
         </section>
     </main>
